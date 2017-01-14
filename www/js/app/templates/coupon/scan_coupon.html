@@ -1,0 +1,18 @@
+<div class="zan-card zan-container-content">
+    <a href="#coupon-item/<%=id%>">
+        <div class="zan-container zan-red">
+            <h4><%=couponTemplate.title %></h4>
+            <%
+                var oneDay = 24*60*60*1000;
+                var createdDate = new Date(createdDate.date);
+                var expirationDate = new Date(expirationDate.date);
+                var diffDays = Math.round(Math.abs((createdDate.getTime() - expirationDate.getTime())/(oneDay)));
+            %>
+            <b>Days left: <%=diffDays %></b>
+            <em><%=createdDate.toLocaleDateString() %>-<%=expirationDate.toLocaleDateString() %></em>
+        </div>
+    </a>
+    <div class="zan-action-button">
+        <a href="#add-coupon" class="show-dialog-add-coupon" data-coupon-id="<%=id %>"><img src="images/zan-icon/coupon-add.png" alt="" width="28" height="28"></a>
+    </div>
+</div>
