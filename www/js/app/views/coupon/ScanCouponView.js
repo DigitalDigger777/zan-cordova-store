@@ -42,6 +42,12 @@ define([
         },
         onRender: function(){
             console.log('Scan coupon item');
+
+            $(".preload-image").lazyload({
+                threshold : 100,
+                effect : "fadeIn",
+                container: $("#page-content-scroll")
+            });
         }
     });
 });

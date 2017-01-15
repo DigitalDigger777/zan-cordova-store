@@ -1,13 +1,13 @@
 <div class="zan-content-header">
     <img class="preload-image" data-original="images/zan-images/the_loop_restaurant_logo_by_yasergrafix-d5f3q5p_PicViewer.jpg" alt="img">
-    <strong><%=coupon.couponTemplate.shopper.name %></strong>
+    <strong><%=couponTemplate.shopper.name %></strong>
 </div>
-<div class="zan-container <%=coupon.couponTemplate.styleScheme['background-class'] %>">
-    <h4><%=coupon.couponTemplate.title %></h4>
+<div class="zan-container <%=couponTemplate.styleScheme['background-class'] %>">
+    <h4><%=couponTemplate.title %></h4>
     <%
         var oneDay = 24*60*60*1000;
-        var createdDate = new Date(coupon.createdDate.date);
-        var expirationDate = new Date(coupon.expirationDate.date);
+        var createdDate = new Date(createdDate.date);
+        var expirationDate = new Date(expirationDate.date);
         var diffDays = Math.round(Math.abs((createdDate.getTime() - expirationDate.getTime())/(oneDay)));
     %>
 
@@ -20,26 +20,6 @@
 </div>
 <!--</a>-->
 <div class="zan-action-button">
-    <a href="#alert-setting/<%=id%>"><img src="images/zan-icon/alert.png" alt="" width="36" height="36"></a>
+    <a href="#issue/send/<%=id%>"><img src="images/zan-icon/send.png" alt="" width="36" height="36"></a>
 
-    <a href="#"><img src="images/zan-icon/add-to-apple-wallet-logo.png" alt="" height="36"></a>
 </div>
-
-<!--<div class="zan-content-header">-->
-    <!--<img class="preload-image" data-original="images/zan-images/the_loop_restaurant_logo_by_yasergrafix-d5f3q5p_PicViewer.jpg" alt="img">-->
-    <!--<strong>ABC Restaurant</strong>-->
-<!--</div>-->
-<!--<div class="zan-container">-->
-    <!--<h4>Spent over $20 get one free coffee</h4>-->
-    <!--<b>Days left: 15</b>-->
-    <!--<em>2016.09.12-2016.12.01-->
-        <!--<a href="#coupon-item/<%=id%>">-->
-            <!--<img class="footer-menu-icon" src="images/zan-icon/info-white.png" width="20" height="20" alt="">-->
-        <!--</a>-->
-    <!--</em>-->
-<!--</div>-->
-<!--<div class="zan-action-button">-->
-    <!--<a href="#"><img src="images/zan-icon/alert.png" alt="" width="36" height="36"></a>-->
-    <!--<a href="#"><img src="images/zan-icon/remove.png" alt="" width="36" height="36"></a>-->
-    <!--<a href="#"><img src="images/zan-icon/add-to-apple-wallet-logo.png" alt="" height="36"></a>-->
-<!--</div>-->
