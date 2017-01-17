@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="zan.store.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <name>Zan Store</name>
+    <description>
+        Mobile coupon book which full of local rewards.
+    </description>
+    <author email="korman.yuri@gmail.com" href="http://feelzan.com/">
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/android/icons/mipmap-ldpi/ic_launcher.png" />
+    <icon density="mdpi" src="res/android/icons/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="res/android/icons/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="res/android/icons/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="res/android/icons/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="res/android/icons/mipmap-xxxhdpi/ic_launcher.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

@@ -1,0 +1,83 @@
+<div class="content-fullscreen zan-content-fullscreen">
+    <div class="page-profile">
+        <div class="page-profile-header">
+            <div class="float-left">
+                <a href="images/pictures/5.jpg" class="show-gallery" title="Profile Image!">
+                    <img data-original="images/zan-images/avatar.png" class="preload-image" alt="img">
+                </a>
+                <div class="zan-change-button">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <div class="float-left">
+                <h4><%=firstName + ' ' + lastName %></h4>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="zan-profile-coupons">
+            <a href="#">
+                <span>Valid <br> Coupons</span><br>
+                <span>0</span>
+            </a>
+            <a href="#">
+                <span>Linked<br>Shoppers</span><br>
+                <span>0</span>
+            </a>
+            <a href="#">
+                <span>Friends<br>Coupon</span><br>
+                <span>0</span>
+            </a>
+            <a href="#">
+                <span>Coupon<br>Sent</span><br>
+                <span>0</span>
+            </a>
+            <div class="clear"></div>
+        </div>
+
+        <form action="#" id="zan-personal-data">
+            <div>
+                <label for="zan-name">
+                    First and Last Name:</label>
+                <input type="text" id="zan-name" value="<%=firstName + ' ' + lastName %>">
+            </div>
+            <div>
+                <label for="zan-nick-name">
+                    Nick Name:</label>
+                <input type="text" id="zan-nick-name" value="<%=email %>">
+            </div>
+            <div>
+                <label for="zan-gender">Gender:</label>
+                <select name="gender" id="zan-gender">
+                    <option value="-1" <%=gender == null ? 'selected="selected"' : '' %>>Not Specified</option>
+                    <option value="0" <%=gender == 0 ? 'selected="selected"' : '' %>>Male</option>
+                    <option value="1" <%=gender == 1 ? 'selected="selected"' : '' %>>Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="zan-phone">
+                    Tel:</label>
+                <input type="text" id="zan-phone" value="<%=phoneNumber%>">
+            </div>
+            <div>
+                <label for="zan-post-code">
+                    Post Code:</label>
+                <input type="text" id="zan-post-code" value="">
+            </div>
+            <div>
+                <label for="zan-birthday">Birthday:</label>
+                <input type="datetime-local" id="zan-birthday" value="<%=birthDay %>">
+            </div>
+            <div>
+                <label for="zan-change-pass">Change Password:</label>
+                <a href="#change-password"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <label for="zan-change-pass">My QR Code:</label>
+                <a href="#my-qr-code"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="button button-center button-red" href="#">Logout</a>
+            </div>
+        </form>
+    </div>
+</div>

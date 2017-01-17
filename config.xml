@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="zan.store.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Zan Store</name>
     <description>
         Mobile coupon book which full of local rewards.
@@ -18,9 +18,34 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/android/icons/mipmap-ldpi/ic_launcher.png" />
+        <icon density="mdpi" src="res/android/icons/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/android/icons/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/android/icons/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/android/icons/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/android/icons/mipmap-xxxhdpi/ic_launcher.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon height="180" src="res/ios/icons/icon-60@3x.png" width="180" />
+        <icon height="60" src="res/ios/icons/icon-60.png" width="60" />
+        <icon height="120" src="res/ios/icons/icon-60@2x.png" width="120" />
+        <icon height="76" src="res/ios/icons/icon-76.png" width="76" />
+        <icon height="152" src="res/ios/icons/icon-76@2x.png" width="152" />
+        <icon height="40" src="res/ios/icons/icon-40.png" width="40" />
+        <icon height="80" src="res/ios/icons/icon-40@2x.png" width="80" />
+        <icon height="57" src="res/ios/icons/icon.png" width="57" />
+        <icon height="114" src="res/ios/icons/icon@2x.png" width="114" />
+        <icon height="72" src="res/ios/icons/icon-72.png" width="72" />
+        <icon height="144" src="res/ios/icons/icon-72@2x.png" width="144" />
+        <icon height="29" src="res/ios/icons/icon-small.png" width="29" />
+        <icon height="58" src="res/ios/icons/icon-small@2x.png" width="58" />
+        <icon height="50" src="res/ios/icons/icon-50.png" width="50" />
+        <icon height="100" src="res/ios/icons/icon-50@2x.png" width="100" />
+        <icon height="167" src="res/ios/icons/icon-83.5@2x.png" width="167" />
+        <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" target="*-Info.plist"><string>Photo Library Access Warning</string></config-file>
+        <config-file platform="ios" parent="NSCameraUsageDescription" target="*-Info.plist"><string>Camera Access Warning</string></config-file>
+        <config-file platform="ios" parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist"><string>Location Access Warning</string></config-file>
     </platform>
 </widget>
