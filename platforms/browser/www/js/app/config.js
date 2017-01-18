@@ -3,7 +3,8 @@
  */
 
 require.config({
-    urlRoot: 'http://dev.xu/app_dev.php/',
+    //urlRoot: 'http://dev.xu/app_dev.php/',
+    urlRoot: 'http://xu.joinppcg.com/',
     baseUrl: './',
     paths: {
         vendor: "./vendor",
