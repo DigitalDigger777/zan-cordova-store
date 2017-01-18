@@ -13,15 +13,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -74,26 +74,26 @@
         }
     },
     "installed_plugins": {
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "zan.store.mobile"
+        },
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "cordova-plugin-camera": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-custom-config": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         }
     },
     "dependent_plugins": {},
@@ -165,12 +165,12 @@
         }
     ],
     "plugin_metadata": {
+        "cordova-custom-config": "3.1.2",
         "cordova-plugin-compat": "1.1.0",
         "cordova-plugin-camera": "2.3.1",
-        "cordova-plugin-whitelist": "1.3.1",
         "cordova-plugin-dialogs": "1.3.1",
         "cordova-plugin-inappbrowser": "1.6.1",
-        "phonegap-plugin-barcodescanner": "6.0.5",
-        "cordova-custom-config": "3.1.2"
+        "cordova-plugin-whitelist": "1.3.1",
+        "phonegap-plugin-barcodescanner": "6.0.5"
     }
 }

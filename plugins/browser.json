@@ -7,28 +7,28 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "zan.store.mobile"
         },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "zan.store.mobile"
         },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-custom-config": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "zan.store.mobile"
         }
     }
 }

@@ -72,7 +72,7 @@ ext {
     }
     // .properties files to use for release signing.
     if (!project.hasProperty('cdvReleaseSigningPropertiesFile')) {
-        cdvReleaseSigningPropertiesFile = '/var/www/jerry/zan-cordova-store/release/zan-store/platforms/android/keystore.properties'
+        cdvReleaseSigningPropertiesFile = null
     }
     // .properties files to use for debug signing.
     if (!project.hasProperty('cdvDebugSigningPropertiesFile')) {
@@ -88,7 +88,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "phonegap-plugin-barcodescanner/hellocordova-barcodescanner.gradle"
+apply from: "phonegap-plugin-barcodescanner/mobile-barcodescanner.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
