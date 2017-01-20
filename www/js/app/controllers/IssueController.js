@@ -19,6 +19,7 @@ define([
                     {
                         if(result.format == "QR_CODE")
                         {
+                            navigator.notification.alert('Scan code ' + result.text);
 
                             window.localStorage.removeItem('scan-user-id');
                             window.localStorage.setItem('scan-user-id', result.text);

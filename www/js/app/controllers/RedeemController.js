@@ -16,7 +16,7 @@ define(['model/CouponModel', 'view/coupon/ScanCouponView'], function(CouponModel
                         if(result.format == "QR_CODE")
                         {
 
-                            //navigator.notification.alert(result.text);
+                            navigator.notification.alert('Scan code ' + result.text);
 
                             var model = new CouponModel();
                             model.set('id', result.text);
